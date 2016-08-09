@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdvancedJavaScript-ValidateEmail</title>
+</head>
+<body>
+	<span>Email: </span><input id="email" type="text">
+	<input type="button" onclick="(function(myEmail) { var filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+    alert(String(myEmail).search (filter) != -1);
+;})(document.getElementById('email').value)" value = "Validate">
+</body>
+</html>
